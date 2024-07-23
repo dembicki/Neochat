@@ -406,7 +406,7 @@ function M.get_last_aichat_response(file_path)
 end
 
 function M.ensure_aichat_bin_installed()
-	local version_number = "v0.8.10"
+	local version_number = "v0.19.0"
 	local base_url =
 		string.format("https://github.com/nikvdp/aichat/releases/download/%s/aichat-%s", version_number, version_number)
 
