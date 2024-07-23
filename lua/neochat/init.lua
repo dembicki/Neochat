@@ -72,7 +72,7 @@ function M.create_tmp_aichat_dir(options)
 	local tmp_dir = vim.fn.tempname()
 	vim.fn.mkdir(tmp_dir, "p")
 	local openai_key = options.openai_key or M.get_openai_api_key()
-	local model = "gpt-3.5-turbo"
+	local model = "gpt-4o-mini"
 	local config_yml = string.format(
 		util.dedent([==[
                 api_key: "%s"
